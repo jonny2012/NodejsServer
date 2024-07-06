@@ -32,7 +32,8 @@ router.get("/api", (req, res) => {
     res.setHeader( "Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, PATCH, OPTIONS" ); 
      }); // это нужно чтобы  можно было отправлять запросы   по localhost 
 
-const uri = "mongodb+srv://vaneass21:13fpvYYQGP7jZ0ss@cluster0.xhjrl8r.mongodb.net/?appName=Cluster0";
+const uri = "mongodb+srv://vaneass21:<password>@cluster0.xhjrl8r.mongodb.net/?appName=Cluster0";
+        // я убрал пароль потому что  в github не желательно сохранять доступ к чему либо
 
 async function startApp(){
 
